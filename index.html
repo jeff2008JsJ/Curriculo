@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículo - Jerfferson de Carvalho Santos</title>
+  <style>
+    :root {
+      --primary: #1f3a5f;
+      --accent: #2e75b6;
+      --text: #2b2b2b;
+      --muted: #666;
+      --line: #dde3ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #eef1f5;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 820px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 40px 48px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    }
+    header {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      color: var(--primary);
+      letter-spacing: .5px;
+    }
+    header .headline {
+      margin: 4px 0 12px;
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 22px;
+      font-size: 14px;
+      color: var(--muted);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .contact a { color: inherit; text-decoration: none; }
+    section { margin-bottom: 24px; }
+    h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+      margin: 0 0 12px;
+    }
+    .item { margin-bottom: 12px; }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .item-title { font-weight: 700; }
+    .item-sub { color: var(--muted); font-size: 14px; }
+    .item-date {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills li {
+      background: #eaf1f9;
+      color: var(--primary);
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    p { margin: 0; }
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; padding: 20px 28px; max-width: none; }
+      a { color: inherit; }
+    }
+    @media (max-width: 600px) {
+      .page { padding: 24px 20px; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Jerfferson de Carvalho Santos</h1>
+      <p class="headline">Tecnologia da Informação | Dados | Automação | Suporte e Desenvolvimento</p>
+      <ul class="contact">
+        <li>41 anos</li>
+        <li>Cidade Tiradentes – São Paulo/SP</li>
+        <li><a href="tel:+5511996983185">(11) 99698-3185</a></li>
+        <li><a href="mailto:jeff2008jl@gmail.com">jeff2008jl@gmail.com</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2>Objetivo Profissional</h2>
+      <p>
+        Profissional em transição de carreira para a área de Tecnologia da Informação,
+        graduado em Sistemas de Informação e com conhecimentos em Python, SQL, ETL,
+        JavaScript, PHP, HTML, Power BI, MySQL e Linux Debian. Busca oportunidade para
+        aplicar conhecimentos técnicos, desenvolver experiência prática e contribuir com
+        soluções voltadas a dados, automação e melhoria de processos.
+      </p>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>MySQL</li>
+        <li>ETL</li>
+        <li>Power BI</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>HTML</li>
+        <li>Linux Debian</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiência Profissional</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Auxiliar de Escritório</span>
+          <span class="item-date">Desde 04/10/2023</span>
+        </div>
+        <div class="item-sub">Metalfrio Solutions S/A</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Operador de Empilhadeira</span>
+          <span class="item-date">03/2023 – 09/2023</span>
+        </div>
+        <div class="item-sub">Sesé Logística do Brasil LTDA (terceiro na Mercedes-Benz do Brasil)</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Almoxarife e Operador de Empilhadeira</span>
+          <span class="item-date">12/2010 – 11/2022</span>
+        </div>
+        <div class="item-sub">Metalfrio Solutions S/A</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Ajudante Geral e Inspetor de Qualidade</span>
+          <span class="item-date">10/2003 – 03/2010</span>
+        </div>
+        <div class="item-sub">Tubopeças Indústria e Comércio LTDA</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formação Acadêmica</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Bacharelado em Sistemas de Informação</span>
+          <span class="item-date">Concluído em 04/2023</span>
+        </div>
+        <div class="item-sub">Faculdade Anhanguera</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Técnico em Mecatrônica</span>
+          <span class="item-date">12/2006 – 12/2008</span>
+        </div>
+        <div class="item-sub">Universidade de Mogi das Cruzes</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Ensino Médio Completo</span>
+          <span class="item-date">Concluído em 2005</span>
+        </div>
+        <div class="item-sub">Escola Jardim Wilma Flor</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cursos e Idiomas</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Inglês</span>
+          <span class="item-date">Concluído em 03/2024</span>
+        </div>
+        <div class="item-sub">Uni Projeto – Universo do Ensino</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
