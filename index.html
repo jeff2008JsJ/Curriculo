@@ -55,7 +55,7 @@
       margin: 0;
     }
     .contact a { color: inherit; text-decoration: none; }
-    .contact a.link { color: var(--accent); font-weight: 600; text-decoration: underline; }
+    a.link { color: var(--accent); font-weight: 600; text-decoration: underline; }
     section { margin-bottom: 24px; }
     h2 {
       font-size: 16px;
@@ -76,6 +76,8 @@
     .item-title { font-weight: 700; }
     .item .skills { margin-top: 6px; }
     .item-sub { color: var(--muted); font-size: 14px; }
+    .item-desc { font-size: 14px; margin-top: 4px; }
+    .item-desc a { color: var(--accent); font-weight: 600; }
     .item-date {
       color: var(--muted);
       font-size: 13px;
@@ -166,6 +168,32 @@
           <li>Docker</li>
           <li>Computação em Nuvem</li>
           <li>Cibersegurança</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Controle de Devolução de Peças (Excel + VBA)</span>
+          <span class="item-date"><a class="link" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener">Ver no GitHub</a></span>
+        </div>
+        <div class="item-sub">Projeto baseado em um problema real, publicado com dados fictícios</div>
+        <p class="item-desc">
+          Reestruturação de uma planilha com ~95 mil registros de devolução de peças em garantia:
+          padronização de ~5 mil variações de status em 9 status oficiais, base em tabela estruturada
+          com painel de indicadores (aging, valor em risco, % devolvido por regional e transportadora)
+          e automação em VBA para cobrança por e-mail via Outlook, geração da planilha de débito para
+          o Financeiro e consulta de rastreio na transportadora.
+        </p>
+        <ul class="skills">
+          <li>Excel</li>
+          <li>VBA</li>
+          <li>Outlook</li>
+          <li>Python</li>
+          <li>Qualidade de dados</li>
         </ul>
       </div>
     </section>
