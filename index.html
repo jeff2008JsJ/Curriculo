@@ -128,8 +128,13 @@
     .skill-row .item-title { min-width: 96px; font-size: 14px; }
     @media print {
       .actions { display: none !important; }
+      html, body { width: 100%; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { width: 100%; min-height: 0; }
+      header, section, .item, .skill-row { break-inside: avoid; page-break-inside: avoid; }
+      h2 { break-after: avoid; page-break-after: avoid; }
       body { background: #fff; }
-      .page { margin: 0; box-shadow: none; padding: 0; max-width: none; }
+      .page { margin: 0 !important; box-shadow: none; padding: 0 !important; max-width: none; width: 100%; }
       section { margin-bottom: 14px; }
       @page { size: A4; margin: 10mm 13mm; }
       body { line-height: 1.32; font-size: 13px; }
