@@ -1,0 +1,73 @@
+name: Atualizar PDF do currículo
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - ".github/workflows/atualizar-pdf.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  gerar-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar Playwright e Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: Gerar PDF a partir do HTML atualizado
+        run: |
+          python3 -m http.server 8080 --bind 127.0.0.1 >/tmp/cv-server.log 2>&1 &
+          node <<'NODE'
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage();
+            await page.goto('http://127.0.0.1:8080/index.html', {
+              waitUntil: 'networkidle'
+            });
+            await page.emulateMedia({ media: 'print' });
+            await page.pdf({
+              path: 'curriculo.pdf',
+              format: 'A4',
+              printBackground: true,
+              preferCSSPageSize: true,
+              margin: {
+                top: '10mm',
+                right: '13mm',
+                bottom: '10mm',
+                left: '13mm'
+              }
+            });
+            await browser.close();
+          })().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
+
+      - name: Salvar o PDF atualizado no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add curriculo.pdf
+          if git diff --cached --quiet; then
+            echo "O PDF não teve alterações."
+          else
+            git commit -m "Atualiza PDF do currículo"
+            git push
+          fi
