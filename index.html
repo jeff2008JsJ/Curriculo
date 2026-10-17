@@ -100,9 +100,30 @@
       font-weight: 600;
     }
     p { margin: 0; }
+    .bullets { margin: 4px 0 0; padding-left: 18px; font-size: 14px; }
+    .bullets li { margin-bottom: 3px; }
+    .compact .item { margin-bottom: 6px; }
+    .skill-row { display: flex; gap: 10px; align-items: baseline; margin-bottom: 8px; }
+    .skill-row .item-title { min-width: 96px; font-size: 14px; }
     @media print {
       body { background: #fff; }
-      .page { margin: 0; box-shadow: none; padding: 20px 28px; max-width: none; }
+      .page { margin: 0; box-shadow: none; padding: 0; max-width: none; }
+      section { margin-bottom: 14px; }
+      @page { size: A4; margin: 10mm 13mm; }
+      body { line-height: 1.32; font-size: 13px; }
+      header { padding-bottom: 8px; margin-bottom: 12px; }
+      header h1 { font-size: 24px; }
+      header .headline { margin: 2px 0 6px; font-size: 13.5px; }
+      .contact { font-size: 12.5px; }
+      h2 { font-size: 13.5px; margin-bottom: 6px; }
+      .item { margin-bottom: 6px; }
+      .compact .item { margin-bottom: 3px; }
+      .item-sub, .item-desc, .bullets { font-size: 12.5px; }
+      .bullets li { margin-bottom: 1px; }
+      .item-date { font-size: 12px; }
+      .skill-row { margin-bottom: 4px; }
+      .skills { gap: 5px; }
+      .skills li { padding: 1px 7px; font-size: 12px; }
       a { color: inherit; }
     }
     @media (max-width: 600px) {
@@ -114,61 +135,66 @@
   <main class="page">
     <header>
       <h1>Jerfferson de Carvalho Santos</h1>
-      <p class="headline">Tecnologia da Informação | Dados | Automação | Suporte e Desenvolvimento</p>
+      <p class="headline">Analista de Dados Jr | Automação de Processos | Excel/VBA · SQL · Power BI · Python</p>
       <ul class="contact">
         <li>Cidade Tiradentes – São Paulo/SP</li>
         <li><a href="tel:+5511996983185">(11) 99698-3185</a></li>
         <li><a href="mailto:jeff2008jl@gmail.com">jeff2008jl@gmail.com</a></li>
-        <li><a class="link" href="https://www.linkedin.com/in/jerfferson-carvalho-b0099a177" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a class="link" href="https://github.com/jeff2008JsJ" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="link" href="https://www.linkedin.com/in/jerfferson-carvalho-b0099a177" target="_blank" rel="noopener">linkedin.com/in/jerfferson-carvalho-b0099a177</a></li>
+        <li><a class="link" href="https://github.com/jeff2008JsJ" target="_blank" rel="noopener">github.com/jeff2008JsJ</a></li>
       </ul>
     </header>
 
     <section>
-      <h2>Objetivo Profissional</h2>
+      <h2>Resumo</h2>
       <p>
-        Profissional em transição de carreira para a área de Tecnologia da Informação,
-        cursando Sistemas de Informação e com conhecimentos em Python, SQL, ETL,
-        JavaScript, PHP, HTML, Power BI, MySQL e Linux Debian. Busca oportunidade para
-        aplicar conhecimentos técnicos, desenvolver experiência prática e contribuir com
-        soluções voltadas a dados, VBA, automação e melhoria de processos.
+        Bacharel em Sistemas de Informação com 3 anos de experiência automatizando processos
+        administrativos com Excel, VBA e Outlook. Desenvolvi automações que reduziram de 2–3 horas
+        para segundos o envio de cobranças a mais de 250 assistências técnicas e reestruturei uma base
+        de ~95 mil registros com painel de indicadores. Busco oportunidade como Analista de Dados,
+        BI ou Automação de Processos.
       </p>
     </section>
 
     <section>
-      <h2>Conhecimentos Técnicos</h2>
+      <h2>Experiência Profissional</h2>
 
       <div class="item">
-        <div class="item-title">Programação</div>
-        <ul class="skills">
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>VBA</li>
+        <div class="item-header">
+          <span class="item-title">Auxiliar de Escritório – Retorno de Peças em Garantia (dados e automação)</span>
+          <span class="item-date">10/2023 – atual</span>
+        </div>
+        <div class="item-sub">Metalfrio Solutions S/A</div>
+        <ul class="bullets">
+          <li>Automatizei em VBA + Outlook a montagem e o envio de e-mails de cobrança para mais de 250 assistências técnicas: o processo caiu de 2–3 horas para segundos.</li>
+          <li>Criei macro de conferência de notas fiscais de retorno (PDF e XML da NF-e recebidos por e-mail): lê os documentos, confere valores, impostos (ICMS/IPI), CFOP, NCM e frete e responde automaticamente apontando as divergências.</li>
+          <li>Reestruturei a base de devolução (~95 mil registros), padronizando ~5 mil variações de status em 9 status oficiais, com painel de indicadores (aging, valor em risco, % devolvido por regional e transportadora).</li>
+          <li>Gero a planilha mensal de débito para o Financeiro e automatizei a consulta de rastreio na transportadora.</li>
         </ul>
       </div>
 
-      <div class="item">
-        <div class="item-title">Dados</div>
-        <ul class="skills">
-          <li>SQL</li>
-          <li>MySQL</li>
-          <li>NoSQL</li>
-          <li>ETL</li>
-          <li>Google BigQuery</li>
-          <li>Power BI</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-title">Infraestrutura</div>
-        <ul class="skills">
-          <li>Linux Debian</li>
-          <li>Docker</li>
-          <li>Computação em Nuvem</li>
-          <li>Cibersegurança</li>
-        </ul>
+      <div class="compact">
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Operador de Empilhadeira</span>
+            <span class="item-date">03/2023 – 09/2023</span>
+          </div>
+          <div class="item-sub">Sesé Logística do Brasil LTDA (terceiro na Mercedes-Benz do Brasil)</div>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Almoxarife e Operador de Empilhadeira</span>
+            <span class="item-date">12/2010 – 11/2022</span>
+          </div>
+          <div class="item-sub">Metalfrio Solutions S/A</div>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Ajudante Geral e Inspetor de Qualidade</span>
+            <span class="item-date">10/2003 – 03/2010</span>
+          </div>
+          <div class="item-sub">Tubopeças Indústria e Comércio LTDA</div>
+        </div>
       </div>
     </section>
 
@@ -177,100 +203,76 @@
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">Controle de Devolução de Peças (Excel + VBA)</span>
-          <span class="item-date"><a class="link" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener">Ver no GitHub</a></span>
+          <span class="item-title">Controle de Devolução de Peças (Excel + VBA + Python)</span>
+          <span class="item-date"><a class="link" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener">github.com/jeff2008JsJ/controle-devolucao-pecas</a></span>
         </div>
-        <div class="item-sub">Projeto baseado em um problema real, publicado com dados fictícios</div>
         <p class="item-desc">
-          Reestruturação de uma planilha com ~95 mil registros de devolução de peças em garantia:
-          padronização de ~5 mil variações de status em 9 status oficiais, base em tabela estruturada
-          com painel de indicadores (aging, valor em risco, % devolvido por regional e transportadora)
-          e automação em VBA para cobrança por e-mail via Outlook, geração da planilha de débito para
-          o Financeiro e consulta de rastreio na transportadora.
+          Versão pública, com dados fictícios, do sistema que uso no trabalho: tabela estruturada,
+          normalização de status (De-Para), painel de aging, cobrança automática por e-mail via Outlook,
+          planilha de débito e gerador de dados de demonstração em Python.
         </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conhecimentos Técnicos</h2>
+      <div class="skill-row">
+        <span class="item-title">Dados</span>
         <ul class="skills">
-          <li>Excel</li>
+          <li>Excel avançado</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>Power BI</li>
+          <li>ETL</li>
+          <li>Google BigQuery</li>
+          <li>Qualidade de dados</li>
+        </ul>
+      </div>
+      <div class="skill-row">
+        <span class="item-title">Automação</span>
+        <ul class="skills">
           <li>VBA</li>
           <li>Outlook</li>
           <li>Python</li>
-          <li>Qualidade de dados</li>
+        </ul>
+      </div>
+      <div class="skill-row">
+        <span class="item-title">Outros</span>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>Linux</li>
+          <li>Git/GitHub</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Experiência Profissional</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Auxiliar de Escritório</span>
-          <span class="item-date">Desde 04/10/2023</span>
+      <h2>Formação</h2>
+      <div class="compact">
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Bacharelado em Sistemas de Informação – concluído</span>
+            <span class="item-date">04/2023 – 07/2026</span>
+          </div>
+          <div class="item-sub">Faculdade Anhanguera</div>
         </div>
-        <div class="item-sub">Metalfrio Solutions S/A</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Operador de Empilhadeira</span>
-          <span class="item-date">03/2023 – 09/2023</span>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Técnico em Mecatrônica</span>
+            <span class="item-date">12/2006 – 12/2008</span>
+          </div>
+          <div class="item-sub">Universidade de Mogi das Cruzes</div>
         </div>
-        <div class="item-sub">Sesé Logística do Brasil LTDA (terceiro na Mercedes-Benz do Brasil)</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Almoxarife e Operador de Empilhadeira</span>
-          <span class="item-date">12/2010 – 11/2022</span>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Idiomas: Inglês pré-intermediário</span>
+            <span class="item-date">03/2023 – 03/2024</span>
+          </div>
+          <div class="item-sub">Uni Projeto – Universo do Ensino (ênfase em conversação)</div>
         </div>
-        <div class="item-sub">Metalfrio Solutions S/A</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Ajudante Geral e Inspetor de Qualidade</span>
-          <span class="item-date">10/2003 – 03/2010</span>
-        </div>
-        <div class="item-sub">Tubopeças Indústria e Comércio LTDA</div>
       </div>
     </section>
-
-    <section>
-      <h2>Formação Acadêmica</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Bacharelado em Sistemas de Informação</span>
-          <span class="item-date">04/2023 – 07/2026</span>
-        </div>
-        <div class="item-sub">Faculdade Anhanguera</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Técnico em Mecatrônica</span>
-          <span class="item-date">12/2006 – 12/2008</span>
-        </div>
-        <div class="item-sub">Universidade de Mogi das Cruzes</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Ensino Médio Completo</span>
-          <span class="item-date">Concluído em 2005</span>
-        </div>
-        <div class="item-sub">Escola Jardim Wilma Flor</div>
-      </div>
-    </section>
-
-    <section>
-  <div class="item">
-  <div class="item-header">
-    <div class="item-title">Inglês</div>
-    <div class="item-date">03/2023 – 03/2024</div>
-  </div>
-  <div class="item-sub">Ênfase em conversação (Básico 1, Básico 2 e Pré-Intermediário 1)</div>
-  <div class="item-sub">Uni Projeto – Universo do Ensino</div>
-</div>
-
-
-
+  </main>
+</body>
+</html>
