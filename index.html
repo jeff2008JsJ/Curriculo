@@ -135,16 +135,18 @@
       h2 { break-after: avoid; page-break-after: avoid; }
       body { background: #fff; }
       .page { margin: 0 !important; box-shadow: none; padding: 0 !important; max-width: none; width: 100%; }
-      section { margin-bottom: 14px; }
-      @page { size: A4; margin: 10mm 13mm; }
-      body { line-height: 1.32; font-size: 13px; }
+      section { margin-bottom: 9px; }
+      @page { size: A4; margin: 8mm 12mm; }
+      body { line-height: 1.27; font-size: 12.5px; }
       header { padding-bottom: 8px; margin-bottom: 12px; }
       header h1 { font-size: 24px; }
       header .headline { margin: 2px 0 6px; font-size: 13.5px; }
       .contact { font-size: 12.5px; }
       h2 { font-size: 13.5px; margin-bottom: 6px; }
-      .item { margin-bottom: 6px; }
-      .compact .item { margin-bottom: 3px; }
+      .item { margin-bottom: 5px; }
+      .compact .item { margin-bottom: 2px; }
+      .compact .item-header, .compact .item-sub { display: inline; }
+      .compact .item-sub::before { content: " · "; }
       .item-sub, .item-desc, .bullets { font-size: 12.5px; }
       .bullets li { margin-bottom: 1px; }
       .item-date { font-size: 12px; }
@@ -215,8 +217,15 @@
         </div>
         <div class="item">
           <div class="item-header">
-            <span class="item-title">Almoxarife e Operador de Empilhadeira</span>
-            <span class="item-date">12/2010 – 11/2022</span>
+            <span class="item-title">Operador de Empilhadeira</span>
+            <span class="item-date">11/2019 – 11/2022</span>
+          </div>
+          <div class="item-sub">Metalfrio Solutions S/A</div>
+        </div>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Almoxarife</span>
+            <span class="item-date">12/2011 – 11/2019</span>
           </div>
           <div class="item-sub">Metalfrio Solutions S/A</div>
         </div>
@@ -275,9 +284,19 @@
           <li>JavaScript</li>
           <li>Linux</li>
           <li>Git/GitHub</li>
-          <li>Cibersecurity</li>
+          <li>Cibersegurança</li>
         </ul>
       </div>
+    </section>
+
+    <section>
+      <h2>Cursos</h2>
+      <ul class="bullets courses">
+        <li><strong>Engenharia de Dados com Python – Projeto Prático</strong> · Udemy · 2026</li>
+        <li><strong>Implantação e Análise de Dados em Nuvem</strong> (preparatório Microsoft DP-900) · 2026</li>
+        <li><strong>Tecnologia da Informação</strong> · Fundação Bradesco · 2026</li>
+        <li><strong>Cibersegurança na Nuvem</strong> · Escola SENAI de Informática · 2025</li>
+      </ul>
     </section>
 
     <section>
