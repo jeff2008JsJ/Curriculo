@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currículo - Jefferson de Carvalho Santos</title>
+  <meta name="description" content="Currículo de Jerfferson de Carvalho Santos — dados, BI e automação de processos.">
+  <title>Currículo - Jerfferson de Carvalho Santos</title>
   <style>
     :root {
       --primary: #1f3a5f;
@@ -95,15 +97,9 @@
       gap: 4px 12px;
     }
     .item-title { font-weight: 700; }
-    .item .skills { margin-top: 6px; }
     .item-sub { color: var(--muted); font-size: 14px; }
     .item-desc { font-size: 14px; margin-top: 4px; }
-    .item-desc a { color: var(--accent); font-weight: 600; }
-    .item-date {
-      color: var(--muted);
-      font-size: 13px;
-      white-space: nowrap;
-    }
+    .item-date { color: var(--muted); font-size: 13px; }
     .skills {
       display: flex;
       flex-wrap: wrap;
@@ -126,23 +122,21 @@
     .compact .item { margin-bottom: 6px; }
     .skill-row { display: flex; gap: 10px; align-items: baseline; margin-bottom: 8px; }
     .skill-row .item-title { min-width: 96px; font-size: 14px; }
+    .project-links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 3px; font-size: 13px; }
+
     @media print {
       .actions { display: none !important; }
       html, body { width: 100%; margin: 0 !important; padding: 0 !important; background: #fff !important; }
-      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .page { width: 100%; min-height: 0; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; line-height: 1.27; font-size: 12.5px; }
+      .page { width: 100%; min-height: 0; margin: 0 !important; box-shadow: none; padding: 0 !important; max-width: none; }
       header, section, .item, .skill-row { break-inside: avoid; page-break-inside: avoid; }
-      h2 { break-after: avoid; page-break-after: avoid; }
-      body { background: #fff; }
-      .page { margin: 0 !important; box-shadow: none; padding: 0 !important; max-width: none; width: 100%; }
+      h2 { break-after: avoid; page-break-after: avoid; font-size: 13.5px; margin-bottom: 6px; }
       section { margin-bottom: 9px; }
       @page { size: A4; margin: 8mm 12mm; }
-      body { line-height: 1.27; font-size: 12.5px; }
       header { padding-bottom: 8px; margin-bottom: 12px; }
       header h1 { font-size: 24px; }
       header .headline { margin: 2px 0 6px; font-size: 13.5px; }
       .contact { font-size: 12.5px; }
-      h2 { font-size: 13.5px; margin-bottom: 6px; }
       .item { margin-bottom: 5px; }
       .compact .item { margin-bottom: 2px; }
       .compact .item-header, .compact .item-sub { display: inline; }
@@ -157,25 +151,26 @@
     }
     @media (max-width: 600px) {
       .page { padding: 24px 20px; margin: 0; }
+      .actions { padding: 12px; }
     }
   </style>
 </head>
 <body>
   <nav class="actions" aria-label="Ações do currículo">
-    <a href="curriculo.pdf" download>Baixar currículo em PDF</a>
     <button type="button" onclick="window.print()">Imprimir / Salvar em PDF</button>
-    <a class="secondary" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener">Ver projeto no GitHub</a>
+    <a class="secondary" href="https://github.com/jeff2008JsJ" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
   </nav>
+
   <main class="page">
     <header>
       <h1>Jerfferson de Carvalho Santos</h1>
-      <p class="headline">Analista de Dados Jr | Automação de Processos | Excel/VBA · SQL · Power BI · Python</p>
+      <p class="headline">Analista de Dados Jr. | Automação de Processos | Excel/VBA · SQL · Power BI · Python</p>
       <ul class="contact">
         <li>Cidade Tiradentes – São Paulo/SP</li>
         <li><a href="tel:+5511996983185">(11) 99698-3185</a></li>
         <li><a href="mailto:jeff2008jl@gmail.com">jeff2008jl@gmail.com</a></li>
-        <li><a class="link" href="https://www.linkedin.com/in/jerfferson-carvalho-b0099a177" target="_blank" rel="noopener">linkedin.com/in/jerfferson-carvalho-b0099a177</a></li>
-        <li><a class="link" href="https://github.com/jeff2008JsJ" target="_blank" rel="noopener">github.com/jeff2008JsJ</a></li>
+        <li><a class="link" href="https://www.linkedin.com/in/jerfferson-carvalho-b0099a177" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a class="link" href="https://github.com/jeff2008JsJ" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       </ul>
     </header>
 
@@ -185,14 +180,13 @@
         Bacharel em Sistemas de Informação com 3 anos de experiência automatizando processos
         administrativos com Excel, VBA e Outlook. Desenvolvi automações que reduziram de 2–3 horas
         para segundos o envio de cobranças a mais de 250 assistências técnicas e reestruturei uma base
-        de ~95 mil registros com painel de indicadores. Busco oportunidade como Analista de Dados,
-        BI ou Automação de Processos.
+        de aproximadamente 95 mil registros com painel de indicadores. Busco oportunidade como
+        Analista de Dados, BI ou Automação de Processos.
       </p>
     </section>
 
     <section>
       <h2>Experiência Profissional</h2>
-
       <div class="item">
         <div class="item-header">
           <span class="item-title">Auxiliar de Escritório – Retorno de Peças em Garantia (dados e automação)</span>
@@ -201,8 +195,8 @@
         <div class="item-sub">Metalfrio Solutions S/A</div>
         <ul class="bullets">
           <li>Automatizei em VBA + Outlook a montagem e o envio de e-mails de cobrança para mais de 250 assistências técnicas: o processo caiu de 2–3 horas para segundos.</li>
-          <li>Criei macro de conferência de notas fiscais de retorno (PDF e XML da NF-e recebidos por e-mail): lê os documentos, confere valores, impostos (ICMS/IPI), CFOP, NCM e frete e responde automaticamente apontando as divergências.</li>
-          <li>Reestruturei a base de devolução (~95 mil registros), padronizando ~5 mil variações de status em 9 status oficiais, com painel de indicadores (aging, valor em risco, % devolvido por regional e transportadora).</li>
+          <li>Criei macro de conferência de notas fiscais de retorno (PDF e XML da NF-e recebidos por e-mail): lê os documentos, confere valores, impostos (ICMS/IPI), CFOP, NCM e frete e responde automaticamente apontando divergências.</li>
+          <li>Reestruturei a base de devolução (aproximadamente 95 mil registros), padronizando cerca de 5 mil variações de status em 9 status oficiais, com painel de indicadores (aging, valor em risco, percentual devolvido por regional e transportadora).</li>
           <li>Gero a planilha mensal de débito para o Financeiro e automatizei a consulta de rastreio na transportadora.</li>
         </ul>
       </div>
@@ -241,31 +235,36 @@
 
     <section>
       <h2>Projetos</h2>
-
       <div class="item">
         <div class="item-header">
           <span class="item-title">Controle de Devolução de Peças (Excel + VBA + Python)</span>
-          <span class="item-date"><a class="link" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener">github.com/jeff2008JsJ/controle-devolucao-pecas</a></span>
+        </div>
+        <div class="project-links">
+          <a class="link" href="https://github.com/jeff2008JsJ/controle-devolucao-pecas" target="_blank" rel="noopener noreferrer">Código-fonte no GitHub</a>
         </div>
         <p class="item-desc">
-          Versão pública, com dados fictícios, do sistema que uso no trabalho: tabela estruturada,
+          Versão pública, com dados fictícios, do sistema utilizado no trabalho: tabela estruturada,
           normalização de status (De-Para), painel de aging, cobrança automática por e-mail via Outlook,
           planilha de débito e gerador de dados de demonstração em Python.
         </p>
-        <span class="item-title">Projeto seca Saúdavel - Desenvolvimento Web</span> 
-       <span class="item-date"><a class="link" href="https://seca-saudavel-monetizacao.onrender.com/?utm_source=chatgpt.com" target="_blank" rel="noopener">https://github.com/jeff2008JsJ/seca_saudavel_monetizacao</a></span>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Projeto Seca Saudável – Desenvolvimento Web</span>
         </div>
-       <p class="item-desc">
-          Projeto pessoal de desenvolvimento de uma aplicação web para acompanhamento de hábitos saudáveis e evolução física.
-          Desenvolvimento de interface utilizando HTML, CSS e JavaScript.
-          Backend desenvolvido com Node.js e Express.
-          Integração com banco de dados PostgreSQL utilizando Supabase.
-          Implementação de cadastro, autenticação e gerenciamento de usuários.
-          Desenvolvimento de funcionalidades de acompanhamento de peso, IMC e atividades físicas.
-          Integração com Mercado Pago para assinaturas Premium.
-          Versionamento com Git/GitHub e publicação da aplicação na Render.
-          Tecnologias: JavaScript, Node.js, Express, HTML, CSS, PostgreSQL, Supabase e GitHub.
-         </p>
+        <div class="project-links">
+          <a class="link" href="https://github.com/jeff2008JsJ/seca_saudavel_monetizacao" target="_blank" rel="noopener noreferrer">Código-fonte no GitHub</a>
+          <a class="link" href="https://seca-saudavel-monetizacao.onrender.com/" target="_blank" rel="noopener noreferrer">Aplicação online</a>
+        </div>
+        <p class="item-desc">
+          Projeto pessoal de desenvolvimento de uma aplicação web para acompanhamento de hábitos
+          saudáveis e evolução física. Inclui interface em HTML, CSS e JavaScript; backend com Node.js
+          e Express; banco de dados PostgreSQL com Supabase; cadastro, autenticação e gerenciamento
+          de usuários; acompanhamento de peso, IMC e atividades físicas; e integração com Mercado Pago
+          para assinaturas Premium. Versionamento com Git/GitHub e publicação na Render.
+        </p>
+      </div>
     </section>
 
     <section>
@@ -304,7 +303,7 @@
 
     <section>
       <h2>Cursos</h2>
-      <ul class="bullets courses">
+      <ul class="bullets">
         <li><strong>Engenharia de Dados com Python – Projeto Prático</strong> · Udemy · 2026</li>
         <li><strong>Implantação e Análise de Dados em Nuvem</strong> (preparatório Microsoft DP-900) · 2026</li>
         <li><strong>Tecnologia da Informação</strong> · Fundação Bradesco · 2026</li>
@@ -331,7 +330,7 @@
         </div>
         <div class="item">
           <div class="item-header">
-            <span class="item-title">Idiomas: Inglês pré-intermediário</span>
+            <span class="item-title">Inglês pré-intermediário</span>
             <span class="item-date">03/2023 – 03/2024</span>
           </div>
           <div class="item-sub">Uni Projeto – Universo do Ensino (ênfase em conversação)</div>
